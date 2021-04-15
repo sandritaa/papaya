@@ -53,6 +53,13 @@ a:hover {
     color:red;
 }
 
+/*PROFILE*/
+
+.profile .avatar img{
+    width:2%;
+    height:2%;
+}
+
 /*IMAGE POSITION*/
 
 .tileContainer1 .image img{
