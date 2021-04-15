@@ -27,8 +27,7 @@
 }
 
 .text{
-    font-size: 4.9vw;
-    font-size: 4.9vh;
+    font-size: 4.9vmin;
     color: rgb(255, 255, 255);
     -webkit-backdrop-filter: blur(5px) saturate(1.8);
     backdrop-filter: blur(5px) saturate(1.8);

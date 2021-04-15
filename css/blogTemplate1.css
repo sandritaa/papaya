@@ -8,19 +8,16 @@ body {
 /*HEADERS*/
 
 h1{
-    font-size: 9.9vh;
-    font-size: 9.9vh;
+    font-size: 75px;
     color: rgb(251, 173, 26);
 }
 
 h2{
-    font-size: 1.9vh;
-    font-size: 1.9vh;
+    font-size: 15px;
 }
 
 h3{
-    font-size: 2.9vh;
-    font-size: 2.9vh;
+    font-size: 15px;
 }
 
 /*FOOTER*/
@@ -33,7 +30,7 @@ h3{
 
 .homeButton{
     text-align: end;
-    font-size: 3vh;
+    font-size: 30px;
     font-weight: bold;
     font-style: italic;
 }
@@ -44,21 +41,33 @@ a:link {
     color: orange;
 }
   
-/* visited link */
+/* VISITED LINK */
+
 a:visited {
     color: blue;
 }
   
-/* mouse over link */
+/* MOUSE OVER LINK */
+
 a:hover {
     color:red;
 }
 
 /*PROFILE*/
+
 .profile .avatar img{
     width:2%;
     height:2%;
 }
+
+/*IMAGE POSITION*/
+
+.tileContainer1 .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+  }
 
 /*CONTAINER 1*/
 
@@ -66,8 +75,8 @@ a:hover {
     display: grid; 
     grid-template-columns: 10% 5% 5% 60% 10% 10%;
     grid-template-rows: 10% 5% 37.5% 5% 37.5% 5%;
-    height: 100vh;
-    width:100vw;
+    height:1333px;
+    width:1440px;
     align-self: center; 
     grid-template-areas: 
     "one one . . . ."
@@ -104,103 +113,43 @@ a:hover {
 
 #three{
     grid-area: three; 
-    font-size: 1.9vh;
+    font-size: 15px;
 }
 
-/*MEDIA TABLET*/
+/*MEDIA IPAD*/
+
 @media (max-width: 1024px)
 {
     .tileContainer1{
-        display: grid; 
-        grid-template-columns: 10% 5% 5% 60%;
-        grid-template-rows: 10% 5% 37.5% 5%;
-        height: 100vh;
-        width:100vw;
-        align-self: center; 
-        grid-template-areas: 
-        "one one . ."
-        ". . . ."
-        ". . . two"
-        ". . . ."
-        ". three three ."
-        ". . .";
+        height:948px;
+        width:1024px;
     }
     
-    h2{
-        font-size: 1.9vh;
-        font-size: 1.9vh;
-        margin-top: 60%;
+    #one{
+        font-size: 30px;
     }
 
     .footer{
         text-align:left;
     }
-
-
-
-    #one{
-        grid-area: one;
-        font-size: 30px;
-        text-decoration: underline;
-    }
-
-    #box{
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        background-size: cover;
-    }
     
 }
 
+/*MEDIA IPHONE 8*/
 
-
-
-/*MEDIA PHONE*/
- @media (max-width: 500px)
+ @media (max-width: 736px)
 {
     .tileContainer1{
-        display: grid; 
-        grid-template-columns: 10% 5% 5% 60% 10% 10%;
-        grid-template-rows: 10% 5% 37.5% 5% 37.5% 5%;
-        height: 100vh;
-        width:100vw;
-        align-self: center; 
-        grid-template-areas: 
-        "one one . . . ."
-        ". . . . . . "
-        ". . . two . ."
-        ". . . . . ."
-        ". three three three three ."
-        ". . . . . .";
-    }
-    
-    .box{
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
+        height: 680px;
+        width: 736px;
     }
     
     .tileContainer1 .image{
         width:100%;
         height:100%;
-    }
-    
-    #one{
-        grid-area: one;
-        font-size: 50px;
-        text-decoration: underline;
-    }
-    
-    #two{
-        grid-area: two; 
-    }
-    
+    } 
+
     #three{
-        grid-area: three; 
-        font-size: 1.9vh;
+        font-size: 10px;
     }
 } 

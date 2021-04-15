@@ -8,19 +8,16 @@ body {
 /*HEADERS*/
 
 h1{
-    font-size: 9.9vw;
-    font-size: 9.9vh;
+    font-size: 75px;
     color: rgb(251, 173, 26);
 }
 
 h2{
-    font-size: 1.9vw;
-    font-size: 1.9vh;
+    font-size: 15px;
 }
 
 h3{
-    font-size: 2.9vw;
-    font-size: 2.9vh;
+    font-size: 15px;
 }
 
 /*FOOTER*/
@@ -33,7 +30,7 @@ h3{
 
 .homeButton{
     text-align: end;
-    font-size: 3vh;
+    font-size: 30px;
     font-weight: bold;
     font-style: italic;
 }
@@ -44,24 +41,35 @@ a:link {
     color: orange;
 }
   
-/* visited link */
+/* VISITED LINK*/
+
 a:visited {
     color: blue;
 }
   
-/* mouse over link */
+/* MOUSE OVER LINK*/
+
 a:hover {
     color:red;
 }
+
+/*IMAGE POSITION*/
+
+.tileContainer1 .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+  }
 
 /*CONTAINER 1*/
 
 .tileContainer1{
     display: grid; 
     grid-template-columns: 5% 5% 5% 32.5% 5% 27.5% 15% 5%;
-    grid-template-rows: 10% 10% 30% 10% 10% 10%;
-    height: 100vh;
-    width:100vw;
+    grid-template-rows: 10% 10% 45% 10% 20% 5%;
+    height:800px;
+    width:1440px;
     align-self: center; 
     grid-template-areas: 
     "one one . . . . . . "
@@ -95,10 +103,52 @@ a:hover {
 
 #three{
     grid-area: three; 
-    font-size: 1.9vh;
+    font-size: 15px;
 }
 
 #four{
     grid-area: four; 
-    font-size: 1.9vh;
+    font-size: 15px;
 }
+
+/*MEDIA IPAD*/
+
+@media (max-width: 1024px)
+{
+    .tileContainer1{
+        height:568px;
+        width:1024px;
+    }
+    
+    #one{
+        font-size: 30px;
+    }
+
+    .footer{
+        text-align:left;
+    }
+    
+}
+
+/*MEDIA IPHONE 8*/
+
+@media (max-width: 736px)
+{
+    .tileContainer1{
+        height: 408px;
+        width: 736px;
+    }
+    
+    .tileContainer1 .image{
+        width:100%;
+        height:100%;
+    } 
+
+    #three{
+        font-size: 10px;
+    }
+
+    #four{
+        font-size: 10px;
+    }
+} 
