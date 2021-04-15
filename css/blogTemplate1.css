@@ -131,17 +131,16 @@ a:hover {
 
     .footer{
         text-align:left;
-    }
-    
+    }   
 }
 
 /*MEDIA IPHONE 8*/
 
- @media (max-width: 736px)
+ @media (max-width: 667px)
 {
     .tileContainer1{
         height: 680px;
-        width: 736px;
+        width: 100%;
     }
     
     .tileContainer1 .image{
@@ -150,6 +149,11 @@ a:hover {
     } 
 
     #three{
-        font-size: 10px;
+        font-size: 15px;
+        margin-top: 230%;
+    }
+
+    h2{
+        margin-top: 285%;
     }
 } 

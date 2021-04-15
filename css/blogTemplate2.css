@@ -139,11 +139,11 @@ a:hover {
 
 /*MEDIA IPHONE 8*/
 
-@media (max-width: 736px)
+@media (max-width: 667px)
 {
     .tileContainer1{
-        height: 408px;
-        width: 736px;
+        height: 680px;
+        width: 100%;
     }
     
     .tileContainer1 .image{
@@ -152,10 +152,10 @@ a:hover {
     } 
 
     #three{
-        font-size: 10px;
+        font-size: 11px;
     }
 
     #four{
-        font-size: 10px;
+        font-size: 11px;
     }
 } 
