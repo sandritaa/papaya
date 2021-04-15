@@ -1,0 +1,33 @@
+@import url("/css/indexContainer1.css");
+@import url("/css/indexContainer2.css");
+@import url("/css/indexLinks.css");
+
+/*BODY*/
+
+body{
+    font-family: "Blinker", sans-serif;
+    text-transform: uppercase ;
+}
+
+/*HEADERS*/
+
+h1{
+    font-size: 60px;
+    color: rgb(251, 173, 26);
+}
+
+h2{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 20px;
+}
+
+/*FOOTER*/
+
+.footer{
+    text-align: center;
+}
+

@@ -1,0 +1,61 @@
+/*CONTAINER 1*/
+
+.tileContainer1{
+    display: grid; 
+    grid-template-columns: 10% 15% 5% 10% 20% 10% 20% 10%;
+    grid-template-rows: 10% 10% 30% 10% 30% 10%;
+    height: 100vh;
+    width:100vw;
+    grid-template-areas: 
+    "one one . . . . . ."
+    ". . . . . . . ."
+    ". two two . three . four ."
+    ". . . . . . . ."
+    ". five five . six . seven ."
+    ". . . . . . . .";
+}
+
+.box{
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-position:0% 100%;
+}
+
+#one{
+    grid-area: one;
+    font-family: 'Blinker', sans-serif;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#two{
+    grid-area: two; 
+    background-image: url(../images/p3.png);
+} 
+
+#three{
+    grid-area: three; 
+    background-image: url(../images/p9.png);
+}
+
+#four{
+    grid-area: four;
+    background-image: url(../images/p2.png);
+}
+
+#five{
+
+    grid-area: five; 
+    background-image: url(../images/p11.png);
+} 
+
+#six{
+    grid-area: six; 
+    background-image: url(../images/p5.png);
+}
+
+#seven{
+    grid-area: seven; 
+    background-image: url(../images/p14.png);
+}

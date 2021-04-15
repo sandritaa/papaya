@@ -1,0 +1,54 @@
+/*BODY*/
+
+body {
+    font-family: "Blinker", sans-serif;
+    text-transform: uppercase ;
+}
+
+/*HEADERS*/
+
+h1{
+    font-size: 9.9vw;
+    font-size: 9.9vh;
+    color: rgb(251, 173, 26);
+}
+
+h2{
+    font-size: 1.9vw;
+    font-size: 1.9vh;
+}
+
+h3{
+    font-size: 2.9vw;
+    font-size: 2.9vh;
+}
+
+/*FOOTER*/
+.footer{
+    text-align: center;
+}
+
+/*BUTTON*/
+
+.homeButton{
+    text-align: end;
+    font-size: 3vh;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*LINKS*/
+
+a:link {
+    color: orange;
+}
+  
+/* visited link */
+a:visited {
+    color: blue;
+}
+  
+/* mouse over link */
+a:hover {
+    color:red;
+}

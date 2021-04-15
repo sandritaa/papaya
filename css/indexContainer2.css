@@ -1,0 +1,80 @@
+/*CONTAINER 2*/
+
+.tileContainer2{
+    display: grid;
+    grid-template-columns: 4% 20% 4% 20% 4% 20% 4% 20% 4%;
+    grid-template-rows:  15% 5% 35% 5% 35% 5%;
+    height: 100vh;
+    width:100vw;
+    align-self: center; 
+    grid-template-areas: 
+    "three three . . . . . . ."
+    ". . . . . . . . . "
+    ". four . five . six . seven . "
+    ". . . . . . . . . "
+    ". eight . nine . ten . eleven ."
+    ". . . . . . . . . ";
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text{
+    font-size: 4.9vw;
+    font-size: 4.9vh;
+    color: rgb(255, 255, 255);
+    -webkit-backdrop-filter: blur(5px) saturate(1.8);
+    backdrop-filter: blur(5px) saturate(1.8);
+}
+
+#three{
+    grid-area: three ;
+    text-decoration: underline;
+}
+
+#four{
+    grid-area: four ; 
+    background-image: url(../images/p15.png);
+}
+
+#five{
+    grid-area: five ;
+    background-image: url(../images/p29.png);
+} 
+
+#six{
+    grid-area: six ; 
+    background-image: url(../images/p28.png);
+}
+
+#seven{
+    grid-area: seven ;
+    background-image: url(../images/p20.png);
+}
+
+#eight{
+    grid-area: eight ; 
+    background-image: url(../images/p19.png);
+}
+
+#nine{
+    grid-area: nine ;
+    background-image: url(../images/p24.png);
+}
+
+#ten{
+    grid-area: ten ; 
+    background-image: url(../images/p30.png);
+}
+
+#eleven{
+    grid-area: eleven ;
+    background-image: url(../images/p26.png);
+}
