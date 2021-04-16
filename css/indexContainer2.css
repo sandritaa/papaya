@@ -77,3 +77,34 @@
     grid-area: eleven ;
     background-image: url(../images/p26.png);
 }
+
+/*MEDIA IPAD*/
+
+@media (max-width: 1024px)
+{
+    .tileContainer1{
+        height:568px;
+        width:100%;
+    }
+
+    #three{
+        font-size: 30px;
+    }
+    
+    .text{
+        font-size: 25px;
+    }
+}
+
+/*MEDIA IPHONE 8*/
+
+@media (max-width: 667px)
+{
+    .tileContainer1{
+        height: 680px;
+        width: 100%;
+    }
+    .text{
+        font-size: 13px;
+    }
+} 

@@ -59,3 +59,23 @@
     grid-area: seven; 
     background-image: url(../images/p14.png);
 }
+
+/*MEDIA IPAD*/
+
+@media (max-width: 1024px)
+{
+    .tileContainer1{
+        height:568px;
+        width:100%;
+    }
+}
+
+/*MEDIA IPHONE 8*/
+
+@media (max-width: 667px)
+{
+    .tileContainer1{
+        height: 680px;
+        width: 100%;
+    }
+} 
